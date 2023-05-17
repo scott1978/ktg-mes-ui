@@ -1,7 +1,7 @@
 <template>
   <div class="login">
     <el-form ref="loginForm" :model="loginForm" :rules="loginRules" class="login-form">
-      <h3 class="title">苦糖果生产执行管理系统</h3>
+      <h3 class="title">宇泰生产执行管理系统</h3>
       <el-form-item prop="username">
         <el-input
           v-model="loginForm.username"
@@ -56,7 +56,7 @@
     </el-form>
     <!--  底部  -->
     <div class="el-login-footer">      
-      <span @click="toIPC">陕ICP备2022002135号-1</span>
+      <span @click="toIPC">备案中....</span>
     </div>
   </div>
 </template>
@@ -72,8 +72,8 @@ export default {
     return {
       codeUrl: "",
       loginForm: {
-        username: "admin",
-        password: "admin123",
+        username: "",
+        password: "",
         rememberMe: false,
         code: "",
         uuid: ""
